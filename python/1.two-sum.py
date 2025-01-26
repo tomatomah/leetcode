@@ -32,26 +32,26 @@ class Solution:
     approch3(One-pass Hash Table)
     """
 
-    # def twoSum(self, nums: List[int], target: int) -> List[int]:
-    #     hashmap = {}
-    #     for i in range(len(nums)):
-    #         complement = target - nums[i]
-    #         if complement in hashmap:
-    #             return [i, hashmap[complement]]
-    #         hashmap[nums[i]] = i
-    #     return []
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        hashmap = {}
+        for i in range(len(nums)):
+            complement = target - nums[i]
+            if complement in hashmap:
+                return [i, hashmap[complement]]
+            hashmap[nums[i]] = i
+        return []
 
     """
     approch4(Custom)
     """
 
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        hashmap = {nums[i]: i for i in range(len(nums))}
-        for i in range(len(nums)):
-            complement = target - nums[i]
-            if complement in hashmap and hashmap[complement] != i:
-                return [i, hashmap[complement]]
-        return []
+    # def twoSum(self, nums: List[int], target: int) -> List[int]:
+    #     hashmap = {nums[i]: i for i in range(len(nums))}
+    #     for i in range(len(nums)):
+    #         complement = target - nums[i]
+    #         if complement in hashmap and hashmap[complement] != i:
+    #             return [i, hashmap[complement]]
+    #     return []
 
 
 def test_solution():

@@ -46,17 +46,17 @@ def test_solution():
     solution = Solution()
 
     test_cases = [
-        {"nums": 121, "expected": True},
-        {"nums": -121, "expected": False},
-        {"nums": 10, "expected": False},
-        {"nums": 0, "expected": True},
-        {"nums": 12321, "expected": True},
+        {"input": 121, "expected": True},
+        {"input": -121, "expected": False},
+        {"input": 10, "expected": False},
+        {"input": 0, "expected": True},
+        {"input": 12321, "expected": True},
     ]
 
     for i, test in enumerate(test_cases):
-        result = solution.isPalindrome(test["nums"])
+        result = solution.isPalindrome(test["input"])
         print(f"Test {i + 1}:")
-        print(f"Input: nums = {test['nums']}")
+        print(f"Input: {test['input']}")
         print(f"Output: {result}")
         print(f"Expected: {test['expected']}")
         print(f"Pass: {result == test['expected']}\n")

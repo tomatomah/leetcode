@@ -58,15 +58,15 @@ def test_solution():
     solution = Solution()
 
     test_cases = [
-        {"nums": [2, 7, 11, 15], "target": 9, "expected": [0, 1]},
-        {"nums": [3, 2, 4], "target": 6, "expected": [1, 2]},
-        {"nums": [3, 3], "target": 6, "expected": [0, 1]},
+        {"input": [2, 7, 11, 15], "target": 9, "expected": [0, 1]},
+        {"input": [3, 2, 4], "target": 6, "expected": [1, 2]},
+        {"input": [3, 3], "target": 6, "expected": [0, 1]},
     ]
 
     for i, test in enumerate(test_cases):
-        result = solution.twoSum(test["nums"], test["target"])
+        result = solution.twoSum(test["input"], test["target"])
         print(f"Test {i + 1}:")
-        print(f"Input: nums = {test['nums']}, target = {test['target']}")
+        print(f"Input: {test['input']}, target = {test['target']}")
         print(f"Output: {result}")
         print(f"Expected: {test['expected']}")
         print(f"Pass: {sorted(result) == sorted(test['expected'])}\n")

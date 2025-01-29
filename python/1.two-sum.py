@@ -3,7 +3,7 @@ from typing import List
 
 class Solution:
     """
-    approch1(Brute Force)
+    approch(Brute Force)
     """
 
     # def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -15,7 +15,7 @@ class Solution:
     #     return []
 
     """
-    approch2(Two-pass Hash Table)
+    approch(Two-pass Hash Table)
     """
 
     # def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -29,7 +29,7 @@ class Solution:
     #     return []
 
     """
-    approch3(One-pass Hash Table)
+    approch(One-pass Hash Table)
     """
 
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -42,7 +42,7 @@ class Solution:
         return []
 
     """
-    approch4(Custom)
+    approch(Custom)
     """
 
     # def twoSum(self, nums: List[int], target: int) -> List[int]:
